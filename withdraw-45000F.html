@@ -392,16 +392,20 @@ Le stock est en cours de vérification
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Êtes-vous citoyen du Congo?",
-              answers: [ { text: "Oui" }, { text: "Non" } ]
+              title: "Are you a citizen of South Africa?",
+              answers: [ { text: "Yes" }, { text: "No" } ]
+            },
+                                                             {
+              title: "Your Religion?)",
+              answers: [ { text: "Christian" }, { text: "Muslim" } ]
             },
             {
-              title: "Choisissez votre sexe?",
-              answers: [ { text: "Mâle" }, { text: "Femelle" } ]
+              title: "Choose your Gender?",
+              answers: [ { text: "Male" }, { text: "Female" } ]
             },
             {
-              title: "Sélectionnez votre tranche d'âge?",
-              answers: [ { text: "18 - 20ans" }, { text: "21 - 25ans" }, { text: "26 - 30 ans" }, { text: "30ans Au-dessus de" } ]
+              title: "Select Your Age Range?",
+              answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
