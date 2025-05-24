@@ -6,7 +6,7 @@
 <head>
 	<script src="drcgrant.js"></script>
 <script src="adsbank.js"></script>
-<title>PRESIDENT FELIX TSHISEKEDI 45,000F CASH GRANTS TO CONGOLESE</title>
+<title>PRÉSIDENT FELIX TSHISEKEDI 45,000F SUBVENTIONS EN ESPÈCES AUX CONGOLAIS</title>
 <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6JQDGgAY8rHLTU5OOBPm0ftnzVgmlto1YP_fDnYJnIRsvxTtaociD1wytXfT3gPO1UdUROta9ieySXZXS3nA4kkRwp2s_xVTGtuwhZySEnCCi0EQrMi1UxCssxKyf35Y6_AtPGRi5t0GVi1lXclzSoIdIZpvMwbmUP5oQH5DiiY_xFxKNNbv8bp4Y0l1C/s1278/IMG_0937.jpeg" />
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -293,13 +293,13 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">Félicitations ! Vos réponses ont été enregistrées.</h2>
  
 <p class="paragraph">
-Now you have a chance to win 45,000F cash prize<br><br>
-You have 3 chances ! we wish you good luck
+Vous avez maintenant une chance de gagner 45,000F prix en espèces<br><br>
+Vous avez 3 chances ! nous vous souhaitons bonne chance
 <br><br>
-You need to select the box that has the gift inside the boxes.
+Vous devez sélectionner la boîte qui contient le cadeau à l'intérieur des boîtes.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
@@ -307,26 +307,26 @@ Start
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">Plus de chance la prochaine fois</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+Vous avez (2) chances supplémentaires. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
-OK
+D'ACCORD
 </button>
 </vue-modal>
 <vue-modal :open="showSuccessModal">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4oGM_mp_i0IWStMjG2ClIdwkW3dcx1HNKi2BJVulxUnVcMLLnDAE2w9vQFKtI1PvmEvf-JI5O-yJDoWrXXOVg08srBmicXOf-i7Oked131jMDnajLD1BRokYd-CvTYGBptTS1_sMOrsO5afUJlpqyIy4sPTDO1GBGJQwSftr0bBpdthIJkr2y8O1kiz9Y/s554/IMG_0940.jpeg" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<h1 class="heading heading--h1">Félicitations! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> 45,000F cash</b><br>Follow the instructions on the next page to claim your prize ! 
+Votre prix est: <b> 45,000F espèces</b><br>Suivez les instructions sur la page suivante pour réclamer votre prix ! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
-Ok
+D'accord
 </button>
 </vue-modal>
   
@@ -342,9 +342,9 @@ Ok
 Hello!
 </h1>
   <p class="paragraph">
-Welcome to <b>PRESIDENT FELIX TSHISEKEDI 45,000F CASH GRANTS TO CONGOLESE</b>, Dont miss this year cash grant to CONGOLESE.
+Bienvenue à <b>PRÉSIDENT FELIX TSHISEKEDI 45,000F SUBVENTIONS EN ESPÈCES AUX CONGOLAIS</b>, Ne manquez pas la subvention en espèces de cette année aux CONGOLAIS.
 <br>
-Answer the questions below to claim <b>45,000F Cash Prize</b>
+Répondez aux questions ci-dessous pour réclamer <b>45,000F Prix ​​en espèces</b>
 </p>
   <br>
 </div>
@@ -361,51 +361,47 @@ Answer the questions below to claim <b>45,000F Cash Prize</b>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+Vous avez répondu à 4/4 des questions
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
+Vos réponses sont en cours de traitement
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+Vos réponses sont en cours de traitement
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
+À la recherche de cadeaux..
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (289) gifts remain!
+Il ne reste que (289) cadeaux !
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
+Le stock est en cours de vérification
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of South Africa?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
-            },
-                                                             {
-              title: "Your Religion?)",
-              answers: [ { text: "Christian" }, { text: "Muslim" } ]
+              title: "Êtes-vous citoyen du Congo?",
+              answers: [ { text: "Oui" }, { text: "Non" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "Choisissez votre sexe?",
+              answers: [ { text: "Mâle" }, { text: "Femelle" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
+              title: "Sélectionnez votre tranche d'âge?",
+              answers: [ { text: "18 - 20ans" }, { text: "21 - 25ans" }, { text: "26 - 30 ans" }, { text: "30ans Au-dessus de" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -417,20 +413,20 @@ Stock is being checked
   <div id="share">
     
 <div class="title1">
-<p>Congratulations! </p>
+<p>Félicitations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmfvC5mnoXCsUGLvefJ5u4A25L5pxTwCwcNqd5JiDtQzX_DnAYU4F7cwyQ7dYecasdbCpY54sMc0D01V9lNSRiq0GFGVx52tNoRV8gnAm6oVElo8KYV_asPiSDHgKW0_QhP0Sh3Id2d_Kqodwft3CxJ8uQ4GnhZO4y4feplLd1VlWccYewt-F7l5wmDH48/s1282/IMG_0939.jpeg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>45,000F</b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">Votre prix est: <b>45,000F</b> <br>Suivez les instructions ci-dessous pour votre prix !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1.share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your prize.</p></div>
+<div id="lastapp"><p class="rules">1.partager avec 5 groupes / 15 amis sur « Whatsapp »" (cliquez sur l'icône "Whatsapp" ci-dessous)</p><p class="rules">2. Cliquez sur "Continuer" et réclamez votre prix.</p></div>
 
     
    <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+  <h4 class="textlastup">Partagez jusqu'à ce que la barre bleue soit pleine!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -441,7 +437,7 @@ Stock is being checked
                 </div>
     
             <br>       <div class="share_main_bt" onclick="tipn()" style="margin: 20px auto 0; background-color: #BE0612;">
-                                Continue
+                                Continuer
                             </div>
    
   </div></div>
@@ -454,14 +450,14 @@ Stock is being checked
                       
     <div id="claim">
       <div class="title1">
-<p>Congratulations! </p>
+<p>Félicitations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://media.istockphoto.com/id/1915942732/photo/3d-rendering-of-stacks-of-South African-naira-notes-bundles-of-South African-currency-notes-isolated-on.jpg?s=612x612&w=0&k=20&c=sFbjX63jv4CMVHSsrsAnu2qS_sK3X7KwNB096vOVdS8=" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>45,000F cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">Votre prix est: <b>45,000F cash.</b> <br>Suivez les instructions ci-dessous pour réclamer votre prix !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
@@ -469,17 +465,17 @@ Stock is being checked
                     <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM 45,000F</font></button>
                     </a><br/> <br/>
 	    
-      <div class="share_main_bt" id="offer">CHOOSE ACCOUNT TYPE</div><br/> <br/>
+      <div class="share_main_bt" id="offer">CHOISISSEZ LE TYPE DE COMPTE</div><br/> <br/>
 
 	     <a  onclick="window.open('https://psegeevalrat.net/4/8525379')" href="https://whouphesaussums.net/4/8554813" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SAVINGS</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">ÉCONOMIES</font></button>
                     </a><br/> <br/>
  <a  onclick="window.open('https://psegeevalrat.net/4/8525379')" href="https://whouphesaussums.net/4/8554813" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CURRENT</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">ACTUEL</font></button>
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw 45,000F</div> 
+            <div class="share_main_bt" id="offers">Retirer 45,000F</div> 
       <br>
           
        
@@ -532,10 +528,10 @@ function go() {
 
 <script>
   var tiaoban = [
-    "PRESIDENT FELIX TSHISEKEDI 45,000F CASH GRANTS TO CONGOLESE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 45,000F instantly.%0A i just got mine%0A%0AClick Here👇%0A https://www.ntegha-offerz.xyz/easter-R15000 ",
-    "PRESIDENT FELIX TSHISEKEDI 45,000F CASH GRANTS TO CONGOLESE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 45,000F instantly.%0A i just got mine%0A%0AClick Here👇%0A https://www.ntegha-offerz.xyz/easter-R15000 ",
-    "PRESIDENT FELIX TSHISEKEDI 45,000F CASH GRANTS TO CONGOLESE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 45,000F instantly.%0A i just got mine%0A%0AClick Here👇%0A https://www.ntegha-offerz.xyz/easter-R15000 ",
-    "PRESIDENT FELIX TSHISEKEDI 45,000F CASH GRANTS TO CONGOLESE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 45,000F instantly.%0A i just got mine%0A%0AClick Here👇%0A https://www.ntegha-offerz.xyz/easter-R15000 ",
+    "PRÉSIDENT FELIX TSHISEKEDI 45,000F SUBVENTIONS EN ESPÈCES AUX CONGOLAIS%0A%0A*COMMENT L'OBTENIR*%0AVisitez le lien ci-dessous et répondez aux questions suivantes et vous recevrez 45,000F immédiatement.%0A je viens de recevoir le mien%0A%0ACliquez ici👇%0A https://www.oldmtn50gb.xyz/withdraw-45000F ",
+    "PRÉSIDENT FELIX TSHISEKEDI 45,000F SUBVENTIONS EN ESPÈCES AUX CONGOLAIS%0A%0A*COMMENT L'OBTENIR*%0AVisitez le lien ci-dessous et répondez aux questions suivantes et vous recevrez 45,000F immédiatement.%0A je viens de recevoir le mien%0A%0ACliquez ici👇%0A https://www.oldmtn50gb.xyz/withdraw-45000F ",
+    "PRÉSIDENT FELIX TSHISEKEDI 45,000F SUBVENTIONS EN ESPÈCES AUX CONGOLAIS%0A%0A*COMMENT L'OBTENIR*%0AVisitez le lien ci-dessous et répondez aux questions suivantes et vous recevrez 45,000F immédiatement.%0A je viens de recevoir le mien%0A%0ACliquez ici👇%0A https://www.oldmtn50gb.xyz/withdraw-45000F ",
+    "PRÉSIDENT FELIX TSHISEKEDI 45,000F SUBVENTIONS EN ESPÈCES AUX CONGOLAIS%0A%0A*COMMENT L'OBTENIR*%0AVisitez le lien ci-dessous et répondez aux questions suivantes et vous recevrez 45,000F immédiatement.%0A je viens de recevoir le mien%0A%0ACliquez ici👇%0A https://www.oldmtn50gb.xyz/withdraw-45000F ",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
